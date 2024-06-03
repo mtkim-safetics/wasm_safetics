@@ -94,7 +94,15 @@
     "numeric": "cpp",
     "random": "cpp",
     "algorithm": "cpp",
-    "*.inc": "cpp"
+    "*.inc": "cpp",
+    "eigenvalues": "cpp",
+    "latch": "cpp",
+    "numbers": "cpp",
+    "scoped_allocator": "cpp",
+    "semaphore": "cpp",
+    "span": "cpp",
+    "typeindex": "cpp",
+    "ranges": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "C_Cpp_Runner.msvcBatchPath": "",

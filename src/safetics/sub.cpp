@@ -4,16 +4,18 @@
 #include <cmath>
 #include <cstdio>
 using namespace Eigen;
-int main(int argc, char const* argv[]) {
-    /* code */
-    return 0;
-}
+
+//make single build need to main function
+// int main(int argc, char const* argv[]) {
+//     /* code */
+//     return 0;
+// }
 EM_PORT_API(int)
-add(int a, int b) {
+sub(int a, int b) {
     return a + b;
 }
 EM_PORT_API(Matrix2f)
-addMatrix2f(Matrix2f a, Matrix2f b) {
+subMatrix2f(Matrix2f a, Matrix2f b) {
     return a + b;
 }
 // fractional_matrix_power 함수 정의
