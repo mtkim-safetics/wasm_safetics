@@ -55,5 +55,5 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 add_executable(${PROJECT_NAME} ${SOURCES})
 set_target_properties(${PROJECT_NAME} PROPERTIES
-    COMPILE_FLAGS "-I src/external/Eigen --no-entry -s EXPORT_ES6=1 -s WASM=1 -s ENVIRONMENT='web' -s EXPORT_NAME='safatics' -s USE_ES6_IMPORT_META=0 -s ASSERTIONS -O3"
+    COMPILE_FLAGS "-I src/external/Eigen --no-entry -s EXPORT_ES6=1 -s WASM=1 -s ENVIRONMENT='web' -s EXPORT_NAME='safatics' -s USE_ES6_IMPORT_META=0 -s ASSERTIONS -O3 -s EXTRA_EXPORTED_RUNTIME_METHODS='[\"cwrap\"]'"
 )
