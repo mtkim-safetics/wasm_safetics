@@ -5,6 +5,7 @@
             "includePath": [
                 "${default}",
                 "${workspaceFolder}/include",
+                "${workspaceFolder}/src/external",
                 "/Users/safetics/emsdk/upstream/emscripten"
             ],
             "defines": [],

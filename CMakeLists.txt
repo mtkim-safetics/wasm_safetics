@@ -49,7 +49,7 @@ set (CMAKE_CXX_STANDARD_REQUIRED ON)
 #     endif ()
 # endif ()
 
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # ================================================================================
 # Include directories                                                           ||
 # ================================================================================
@@ -57,17 +57,17 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 # ================================================================================
 # make build file singlerity                                                    ||
 # ================================================================================
-# add_executable(${PROJECT_NAME} ${SOURCES})
-# set_target_properties(${PROJECT_NAME} PROPERTIES
-#     LINK_FLAGS "-I src/external/Eigen --no-entry -s EXPORT_ES6=1 -s WASM=1 -s ENVIRONMENT='web' -s EXPORT_NAME='safatics' -s USE_ES6_IMPORT_META=0 -s ASSERTIONS -O3"
-# )
+add_executable(${PROJECT_NAME} ${SOURCES})
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    LINK_FLAGS "-v -I src/external/Eigen --no-entry -s EXPORT_ES6=1 -s WASM=1 -s ENVIRONMENT='web' -s EXPORT_NAME='safatics' -s USE_ES6_IMPORT_META=0 -s ASSERTIONS -O2"
+)
 # ================================================================================
 # make build file several files                                                   ||
 # ================================================================================
-add_executable(${PROJECT_NAME} ${SOURCES})
-set_target_properties(${PROJECT_NAME} PROPERTIES
-    LINK_FLAGS "-v -I src/external/Eigen --no-entry -s EXPORT_ES6=1 -s WASM=1 -s ENVIRONMENT='web' -s EXPORT_NAME='safatics' -s USE_ES6_IMPORT_META=0 -s ASSERTIONS -O3"
-)
+# add_executable(${PROJECT_NAME} ${SOURCES})
+# set_target_properties(${PROJECT_NAME} PROPERTIES
+#     LINK_FLAGS "-v -I src/external/Eigen --no-entry -s EXPORT_ES6=1 -s WASM=1 -s ENVIRONMENT='web' -s EXPORT_NAME='safatics' -s USE_ES6_IMPORT_META=0 -s ASSERTIONS -O3"
+# )
 # ================================================================================
 # Include directories                                                           ||
 # ================================================================================

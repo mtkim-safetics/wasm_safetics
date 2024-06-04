@@ -15,6 +15,9 @@
 // #endif
 // #endif
 // #endif
+#ifndef SAFETICS_HPP
+#define SAFETICS_HPP
+
 #ifndef EM_PORT_API
 #if defined(__EMSCRIPTEN__)
 #include <emscripten.h>
@@ -23,3 +26,10 @@
 #else
 #define EM_PORT_API(rettype) rettype
 #endif
+
+namespace Safetics{
+    
+}
+#endif
+
+
