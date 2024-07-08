@@ -6,3 +6,5 @@ emsdk
 build
 cmake-build-*
 compile_commands.json
+*.js
+*.wasm
